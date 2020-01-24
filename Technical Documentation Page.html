@@ -2,22 +2,29 @@
 
 
 <html>
+<head>
+  <link rel="stylesheet" href="technical-documentation-page.css">
+</head>
 <nav id="navbar">
   <header>CSS Properties Reference</header>
-  <ul>
+  <ul id="nav-link-list">
+
     <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-  </ul>
-  <ul>
     <li><a class="nav-link" href="#background">backgound</a></li>
-  </ul>
-  <ul>
     <li><a class="nav-link" href="#background-color">background-color</a></li>
-  </ul>
-  <ul>
     <li><a class="nav-link" href="#background-image">background-image</a></li>
-  </ul>
-  <ul>
     <li><a class="nav-link" href="#border">border</a></li>
+    <li><a class="nav-link" href="#color">color</a></li>
+    <li><a class="nav-link" href="#cursor">cursor</a></li>
+    <li><a class="nav-link" href="#font">font</a></li>
+    <li><a class="nav-link" href="#height">height</a></li>
+    <li><a class="nav-link" href="#outline">outline</a></li>
+    <li><a class="nav-link" href="#padding">padding</a></li>
+    <li><a class="nav-link" href="#resize">resize</a></li>
+    <li><a class="nav-link" href="#word-wrap">word-wrap</a></li>
+
+
+
   </ul>
 </nav>
 <main id="main-doc">
@@ -145,6 +152,159 @@
 
       </article>
     </section>
+    <section class="main-section" id="color">
+      <header>color</header>
+      <article>
+        <p>
+          The color property controls the color of an element's text.
+          It will also apply this color to any styles added to the text, such as,
+          underlines and strikethroughs.
+        </p>
+        <p>An exmple of code using the color property may look like this: </p>
+        <code>
+          .element {
+            color: green;
+          }
+        </code>
+      </article>
+    </section>
+    <section class="main-section" id="cursor">
+      <header>cursor</header>
+      <article>
+        <p>
+          The cursor property controls the type of mouse cursor is used when the
+          mouse is over the element that the property controls. The cursor can be set
+          to a predefined mouse type, or an image! It will have to effect on touch devices.
+
+        </p>
+        <p>An exmple of code using the cursor property may look like this: </p>
+        <code>
+          .element {
+            cursor: help;
+          }
+        </code>
+      </article>
+    </section>
+    <section class="main-section" id="font">
+      <header>font</header>
+      <article>
+        <p>
+          A shorthand property, font, controls exactly what you think it would,
+          all of the properties of the font for an element such as:
+          <ul>
+            <li>font-style </li>
+            <li>font-variant </li>
+            <li>font-weight </li>
+            <li>font-stretch </li>
+            <li>font-size </li>
+            <li>line-height </li>
+            <li>font-family </li>
+          </ul>
+          if you choose not to include a value for any of the above value it will
+          default to it's individual initial value.
+
+
+        </p>
+        <p>An exmple of code using the cursor property may look like this: </p>
+        <code>
+          .element {
+            font: bold 10rem 1.2 sans-serif ;
+          }
+        </code>
+      </article>
+    </section>
+    <section class="main-section" id="height">
+      <header>height</header>
+      <article>
+        <p>
+          The height property controls the height of an element. It is important
+          to remember that every element on a webpage is a rectangle and each element
+          has a rectangle box model which describes each of the rectangle boxes.
+        </p>
+        <p>An exmple of code using the height property may look like this: </p>
+        <code>
+          .element {
+            box-sizing: border-box;
+            height: 200px;
+
+          }
+        </code>
+      </article>
+    </section>
+    <section class="main-section" id="outline">
+      <header>outline</header>
+      <article>
+        <p>
+          The outline property is another shorthand propery that controls all the
+          properties of an elements outline, or the line going around the OUTSIDE
+          of an element. It is important to note that there is no outline-radius property,
+          like there is for border.
+        </p>
+        <p>An exmple of code using the outline property may look like this: </p>
+        <code>
+          .element {
+            outline: orange solid 5px ;
+          }
+        </code>
+      </article>
+    </section>
+    <section class="main-section" id="padding">
+      <header>padding</header>
+      <article>
+        <p>
+          The padding property is a shorthand property that controls the four padding
+          properties:
+          <ul>
+            <li>padding-top</li>
+            <li>padding-right</li>
+            <li>padding-bottom</li>
+            <li>padding-left</li>
+          </ul>
+          As mentioned before every element on a webpage is a rectangle. That box
+          can be referred to as the ccontent box, a padding is the next additional
+          rectangle around a content box.
+
+        </p>
+        <p>An exmple of code using the padding property may look like this: </p>
+        <code>
+          .element {
+            padding: 10px 10px 25px 25px ;
+          }
+        </code>
+      </article>
+    </section>
+    <section class="main-section" id="resize">
+      <header>quotes</header>
+      <article>
+        <p>
+          The resize property sets wether or not an element is resizable and  if
+          so in which direction(s) .
+        </p>
+        <p>An exmple of code using the resize property may look like this: </p>
+        <code>
+          .element {
+            resize: both;
+          }
+        </code>
+      </article>
+    </section>
+    <section class="main-section" id="word-wrap">
+      <header>word-wrap</header>
+      <article>
+        <p>
+          The word-wrap property sets wether or not normally unbreakable words may
+          be broken at arbitrary points, if there are no otherwise acceptable break
+          points in the line.
+        </p>
+        <p>An exmple of code using the word-wrap property may look like this: </p>
+        <code>
+          .element {
+            word-wrap: break-word;
+          }
+        </code>
+      </article>
+    </section>
+
 
 
 
