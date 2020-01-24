@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+
+<html>
+<style>
+header{
+  margin:  auto;
+  text-align: center;
+
+
+
+
+
+  }
+  #dogs{
+    top: 10px;
+    border-radius: 10px;
+    border-bottom: 5px solid black;
+
+  max-width: 100%;
+  }
+  body{
+    text-align: center;
+background-color: white;
+  }
+
+  form{
+    border-color: black;
+    border-radius: 10px;
+    border-style: groove;
+
+    background-position: center;
+    max-height:width 100%;
+    background-size: cover;
+    background-position: top;
+    background-color: gray;
+
+    padding: 2.5rem, .1rem;
+    line-height: 3rem;
+  }
+  textarea{
+    height: 10rem;
+    width: 25rem;
+  }
+</style>
+<head>
+
+
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="image">
+      <img  id="dogs" alt="dogs looking over the page" src="https://tmgnorthwest.com/wp-content/uploads/2018/08/pets-1024x267.png">
+    </div>
+        <h1 id="title" class="text-center"> Super Pet Survey Page</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to inform us about your pets.
+        </p>
+    </header>
+
+
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">
+          Name
+        </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+
+
+      <div class="form-group">
+        <label id="email-label" for="email">
+          Email
+        </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="yourself@gmail.com"
+          required
+        />
+      </div>
+
+
+      <div class="form-group">
+        <label id="number-label" for="number">
+          Your Age
+        </label>
+        <input
+        type="number"
+        name="number"
+        id="number"
+        class="form-control"
+        min=1
+        max= 123
+        placeholder="35"
+        />
+      </div>
+
+
+      <div class="form-group">
+        <label id="dropdown-label" for="dropdown">
+          Available Amount of Hours to Spend on Pets (Daily)
+
+        </label>
+
+        <select id="dropdown" name="available-hours" class="form-control" required>
+          <option value="2-3">2-3 Hours</option>
+          <option value="3-4">3-4 Hours</option>
+          <option value="4-5">4-5 Hours</option>
+          <option value="5+">5+ Hours</option>
+        </select>
+      </div>
+
+
+      <div class="form-group">
+        <p> Do you enjoy pet ownership? </p>
+        <label>
+          <input
+          name="user-pet-enjoyment"
+          value="Definitely"
+          type="radio"
+          class="input radio"
+          checked
+          />Definitely</label>
+        <label>
+          <input
+          name="user-pet-enjoyment"
+          value="Sometimes"
+          type="radio"
+          class="input-radio"
+        />Sometimes</label>
+        <label>
+          <input
+          name="user-pet-enjoyment"
+          value="Not Really"
+          type="radio"
+          class="input-radio"
+        />Not Really</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What do you like about pets <span class="clue">(check all that apply)</span>
+      </p>
+<!--  cuddling , being active, teaching them/ training, having a friend/ comanion, they are cute, they are always happy to see you, -->
+      <label>
+        <input
+        name="like"
+        value="Playing"
+        type="checkbox"
+        class="input-checkbox"
+        />Playing
+      </label>
+      <label>
+        <input
+        name="like"
+        value="Cuddling"
+        type="checkbox"
+        class="input-checkbox"
+        />Cuddling
+      </label>
+      <label>
+        <input
+        name="like"
+        value="Being Active"
+        type="checkbox"
+        class="input-checkbox"
+        />Being Active
+      </label>
+      <label>
+        <input
+        name="like"
+        value="Training"
+        type="checkbox"
+        class="input-checkbox"
+        />Training
+      </label>
+      <label>
+        <input
+        name="like"
+        value="Friendship"
+        type="checkbox"
+        class="input-checkbox"
+        />Friendship
+      </label>
+      <label>
+        <input
+        name="like"
+        value="Cuteness"
+        type="checkbox"
+        class="input-checkbox"
+        />Cuteness
+      </label>
+      <label>
+        <input
+        name="like"
+        value="Loyalty"
+        type="checkbox"
+        class="input-checkbox"
+        checked
+        />Loyalty
+      </label>
+    </div>
+
+
+    <div class="form-group">
+      <p>Is there anything else you would like to share about (your) pets?</p>
+      <label>
+        <textarea id="comment-box" name="comment-box" class="form-control">
+
+        "Please enter anything you would like here. It could be about pet ownership, just a cute little fact about your pet, or anything else you'd like!"
+
+      </textarea>
+      </label>
+    </div>
+
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+    </form>
+  </div>
+</body>
+
+</html>

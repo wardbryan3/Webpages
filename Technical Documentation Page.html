@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+
+<html>
+<nav id="navbar">
+  <header>CSS Properties Reference</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+  </ul>
+  <ul>
+    <li><a class="nav-link" href="#background">backgound</a></li>
+  </ul>
+  <ul>
+    <li><a class="nav-link" href="#background-color">background-color</a></li>
+  </ul>
+  <ul>
+    <li><a class="nav-link" href="#background-image">background-image</a></li>
+  </ul>
+  <ul>
+    <li><a class="nav-link" href="#border">border</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>
+        CSS stands for Cascading Style Sheets and is a language used to modify
+        the look and layout of a webpage. It has many uses, from changing the
+        size,color, kerning, and spacing of text to creating an entire background
+        from code. It has a very simple syntax.
+      </p>
+
+      <p>
+        CSS can be broken down into 6 basic categories: Pseudo-classes, properties,
+        functions, data-types, concepts, and @rules. This webpage will focus only on
+        some of the basic Properties.
+      </p>
+
+    <p>
+      Properties control the color,size,direction, and other visual style options of
+      text, images, videos, and many other website elements.
+    </p>
+  </article>
+  </section>
+  <section class="main-section" id="background">
+  <header>background</header>
+  <article>
+    <p>
+      The background property is a shorthand property for setting most background
+      properties at the same place in the style sheet. Just like other background
+      properties, it can take multiple comma-seperated values, where each value ccorresponds to
+      a background layer. The values it can control are background-image, background-position, background-size,
+      background-repeat, background-origin, background-clip, background-attachment, and background-color.
+    </p>
+    <p>
+      The following is the default values for each background property:
+    </p>
+
+    <ul>
+      <li>
+        background-image: none
+      </li>
+      <li>
+        background-position: 0% 0%
+      </li>
+      <li>
+        background-size: auto auto
+      </li>
+      <li>
+        background repeat: repeat
+      </li>
+      <li>
+        background-origin: padding-box
+      </li>
+      <li>
+        background-clip: border-box
+      </li>
+      <li>
+        background-attachment: scroll
+      </li>
+      <li>
+        background-color: transparent
+      </li>
+    </ul>
+
+    <p> An example of using the background property may look like this:</p>
+    <code>
+      .element {
+        background: rgba(255, 255, 255, 0) url(path/to/image.jpg) bottom 50% / contain fixed repeat;
+      }
+    </code>
+
+  </section>
+  <section class="main-section" id="background-color">
+    <header>background-color</header>
+    <article>
+      <p>
+        The background-color property is used to set the background color of an
+         element. It sets a background color using a &lt; color &gt; value.
+         If you set the background-image property of an element it will be layed
+        over the background-color, however if the background is transparent or
+        translucent, you will be able to see the background-color through the
+        background image.
+      </p>
+      <p>An example of using the background-color property may look like this:</p>
+
+      <code>
+        .element {
+          background-color: orange;
+        }
+      </code>
+    </article>
+  </section>
+    <section class="main-section" id="background-image">
+      <header>background-image</header>
+      <article>
+        <p>
+          The background-image property is used to set the background image of an
+          element. Surprise! It can accept either one image value, or muliple
+          comma-seperated values. If there is more than one background set, then
+          each of the images is sized, positioned, and tiled according to the
+          corresponding value in the other background properties. The images are
+          then stacked on top of each other, with the first being on top of the stack.
+
+        </p>
+        <p>An example of using the background-image property may look like this:</p>
+
+        <code>
+          .element {
+            background-image: url(path/to/img.jpg);
+          }
+        </code>
+      </article>
+    </section>
+    <section class="main-section" id="border">
+      <header>border</header>
+      <article>
+        <p>
+          Border is another shorthand property. It controls the width, style, and color
+          of the top,right, bottom, and left borders of a box. The border property
+          itself can only set the top,right, bottom, and left of the border to the same values.
+          If you would like to set them to different values you may use other border properties.
+        </p>
+
+      </article>
+    </section>
+
+
+
+
+</html>
