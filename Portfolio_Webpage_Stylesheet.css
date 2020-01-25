@@ -196,25 +196,67 @@ flex-direction: column;
 /*CONTACT INFO*/
 
 .contact-info{
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   justify-content: center;
   align-items: center;
   display: flex;
 
-  background-color: ;
+  background-color:  var(--lighter-purple);
 
+  min-height: 45vh;
+  min-width: 100vh;
 
 }
 
 .contact-info-block {
-  background-color: var(--lighter-purple);
-  height:4rem;
-  width: 100vh;
-  padding: 10px;
+  background-color: var(--main-gray);
+  height:6rem;
+  width: 33vh;
+padding-top: 2rem;
+  margin: auto;
   text-align: center;
+  justify-content: center;
+
+  border-radius: 0.5rem;
+
+
+}
+
+.contact-info-block:hover {
+
+
+}
+.tilt-left{
+  transition: all 1s ease-out;
+}
+
+.no-tilt{
+  transition: all 1s ease-out;
+}
+
+.tilt-right{
+  transition: all 1s ease-out;
+}
+
+.tilt-left:hover{
+    transform: scale(1.5) rotate(15deg);
+
+}
+
+.no-tilt:hover{
+  transform: scale(1.5);
+}
+
+.tilt-right:hover{
+  transform: scale(1.5) rotate(-15deg);
 }
 
 
 .contact-info a{
   text-decoration: none;
 }
+
+
+/* END OF CONTACT INFO */
+
+/*FOOTER*/
