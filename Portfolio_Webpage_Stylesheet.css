@@ -153,17 +153,20 @@ p{
 .projects{
   height: 100vh;
   background-color: var(--default-gray);
-  font-family: 'Bowlby One SC', cursive;
+  font-family: sans-serif;
   font-size: 1.5rem;
+  font-weight: bolder;
   justify-content: center;
   align-items: center;
   text-align: center;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 30vw 30vw 30vw;
+  overflow: hidden;
+
 
 }
 
-.projects div{
+.projects {
 
 
 
@@ -172,10 +175,16 @@ p{
 
 .project-tile {
 
-
 display: flex;
 flex-direction: column;
+transition: all 1.5s linear;
 
+
+
+}
+
+.project-tile:hover {
+  transform: scale(2);
 }
 .projects img{
   width: 80%;
@@ -196,7 +205,7 @@ flex-direction: column;
 /*CONTACT INFO*/
 
 .contact-info{
-  font-size: 1.7rem;
+  font-size: 2rem;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -239,7 +248,7 @@ padding-top: 2rem;
 }
 
 .tilt-left:hover{
-    transform: scale(1.5) rotate(15deg);
+    transform: scale(1.5) rotate(5deg);
 
 }
 
@@ -248,7 +257,7 @@ padding-top: 2rem;
 }
 
 .tilt-right:hover{
-  transform: scale(1.5) rotate(-15deg);
+  transform: scale(1.5) rotate(-5deg);
 }
 
 
