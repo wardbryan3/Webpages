@@ -1,10 +1,6 @@
 /* Custom properties/variables  */
 :root {
-  --dark-purple: #0C0032;
-  --main-purple: #190061;
-  --lighter-purple: #240090;
-  --lightest-blue: #3500D3;
-  --main-gray: #282828;
+
 }
 
 /* Base reset */
@@ -72,63 +68,40 @@ html {
 
 /* BASE STYLES*/
 body{
-  background-color: var(--main-gray);
-  color: white;
+
 }
 a{
-  color: white;
+
 }
 
 ul{
-  list-style: none;
+
 }
 
 h1{
-  font-size: 10rem;
-  font-family: 'Bangers', cursive;
+
 }
 p{
-  font-size: 4rem;
-  font-family: 'Bangers', cursive;
+
 
 }
 
 /* NAVBAR */
 .nav{
 
-  font-family: 'Bowlby One SC', cursive;
-  background-color: var(--dark-purple);
-  display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  right: 0;
-  padding-right: 1rem;
-  border-bottom: var(--main-purple) solid .1rem;
-  box-shadow:  0 2px 0 rgba(0, 0, 0, 0.4)
 
 }
 .nav-list{
-  display: flex;
-  flex-direction: row-reverse;
-  font-size: 1.8rem;
-
-  text-align: center;
-
 
 
 }
 
 .nav-list a{
-  display: block;
-  text-decoration: none;
-  padding: 2rem;
-  height: 100%;
+
 }
 
 .nav-list a:hover{
-  background-color: var(--lightest-blue);
+
 }
 
 /* END OF NAVBAR */
@@ -136,14 +109,7 @@ p{
 /* WELCOME SECTION */
 
 .welcome-section{
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  margin-top: 1.5rem;
-  height: 100vh;
-  text-align:center;
-  background-color: var(--lightest-blue);
+
 }
 
 /* END OF WELCOME SECTION */
@@ -151,18 +117,6 @@ p{
 /*PROJECTS*/
 
 .projects{
-  height: 100vh;
-  background-color: var(--default-gray);
-  font-family: sans-serif;
-  font-size: 1.5rem;
-  font-weight: bolder;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 30vw 30vw 30vw;
-  overflow: hidden;
-
 
 }
 
@@ -175,28 +129,18 @@ p{
 
 .project-tile {
 
-display: flex;
-flex-direction: column;
-transition: all 1.5s linear;
-
-
 
 }
 
 .project-tile:hover {
-  transform: scale(2);
+
 }
 .projects img{
-  width: 80%;
-  height: 80%;
-  align-self: center;
+
 }
 
 
 .projects a{
-
-  text-decoration: none;
-
 
 }
 
@@ -205,28 +149,10 @@ transition: all 1.5s linear;
 /*CONTACT INFO*/
 
 .contact-info{
-  font-size: 2rem;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-
-  background-color:  var(--lighter-purple);
-
-  min-height: 45vh;
-  min-width: 100vh;
 
 }
 
 .contact-info-block {
-  background-color: var(--main-gray);
-  height:6rem;
-  width: 33vh;
-padding-top: 2rem;
-  margin: auto;
-  text-align: center;
-  justify-content: center;
-
-  border-radius: 0.5rem;
 
 
 }
@@ -236,33 +162,30 @@ padding-top: 2rem;
 
 }
 .tilt-left{
-  transition: all 1s ease-out;
+
 }
 
 .no-tilt{
-  transition: all 1s ease-out;
+
 }
 
 .tilt-right{
-  transition: all 1s ease-out;
+
 }
 
 .tilt-left:hover{
-    transform: scale(1.5) rotate(5deg);
+
 
 }
 
 .no-tilt:hover{
-  transform: scale(1.5);
 }
 
 .tilt-right:hover{
-  transform: scale(1.5) rotate(-5deg);
 }
 
 
 .contact-info a{
-  text-decoration: none;
 }
 
 
