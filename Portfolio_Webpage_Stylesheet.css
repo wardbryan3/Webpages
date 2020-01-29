@@ -1,6 +1,10 @@
 /* Custom properties/variables  */
 :root {
-
+--main-black: #0B0C10;
+--dark-gray: #1F2833;
+--light-gray: #C5C6C7;
+--light-blue: #66FCF1;
+--dark-blue: #45A29E;
 }
 
 /* Base reset */
@@ -68,7 +72,16 @@ html {
 
 /* BASE STYLES*/
 body{
+  background-color: rgb(11,12,16);
+  background-image: url("http://www.baltana.com/files/wallpapers-8/Geometric-Triangle-HD-Background-Wallpaper-24837.jpg");
+  background-blend-mode:  soft-light;
+  background-size: cover;
 
+}
+
+img{
+  max-width: 50vw;
+  max-height: 50vh;
 }
 a{
 
@@ -79,25 +92,50 @@ ul{
 }
 
 h1{
+color: var(--light-blue);
+text-align: center;
+font-size: 25rem;
+font-family: 'Bebas Neue', cursive;
+font-kerning: 10rem;
+text-shadow: .3rem .3rem .25rem var(--dark-blue);
 
 }
 p{
+color: var(--light-gray);
+text-align: center;
+font-family: 'Bitter', serif;
+font-size: 6rem;
 
+margin-top: 7.5vh;
 
 }
 
 /* NAVBAR */
 .nav{
 
-
+  width: 100vw;
+  top:0px;
+  height: 10vh;
+background-color: transparent;
+display: flex;
+flex-direction: row;
 }
 .nav-list{
 
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  margin:auto;
 
 }
 
 .nav-list a{
-
+  font-family: 'Muli', sans-serif;
+  font-size: 2.5rem;
+  margin:1vw;
+  text-shadow: 0rem .25rem .9rem var(--dark-blue);
+color: var(--light-blue);
+text-decoration: none;
 }
 
 .nav-list a:hover{
@@ -109,14 +147,86 @@ p{
 /* WELCOME SECTION */
 
 .welcome-section{
+display: flex;
+flex-direction: column;
+margin-top:20vh;
+align-items: center;
 
 }
 
 /* END OF WELCOME SECTION */
+/* ABOUT ME*/
+
+.innergrid{
+  display: grid;
+  grid-template-columns: 50vw 40vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.innergrid p{
+margin:auto;
+  font-size: 2.4rem;
+}
+ .first-pic{
+   width: 20vw;
+
+   margin-left: 10vw;
+   grid-row-start: 1;
+   grid-column-start: 2;
+   box-shadow: 0vw 1vw 4vw var(--dark-gray);
+
+   padding:8px;
+ border: 5px solid thick var(--dark-blue);
+ background-color:var(--dark-gray);
+ }
+
+ .second-pic{
+   width: 20vw;
+
+   margin-left: 10vw;
+   grid-row-start: 2;
+   grid-column-start: 1;
+   box-shadow: 0vw 1vw 4vw var(--dark-gray);
+
+   padding:8px;
+ border: 5px solid thick var(--dark-blue);
+ background-color:var(--dark-gray);
+ }
+ .third-pic{
+   width: 20vw;
+
+   margin-left: 10vw;
+   grid-row-start: 3;
+   grid-column-start: 2;
+   box-shadow: 0vw 1vw 4vw var(--dark-gray);
+
+   padding:8px;
+ border: 5px solid thick var(--dark-blue);
+ background-color:var(--dark-gray);
+ }
+ .innergrid p{
+   border-radius: 5px;
+   border-style: solid;
+   border-width: thin;
+   border-color: var(--light-blue);
+
+ }
+
+/*END OF ABOUT ME*/
 
 /*PROJECTS*/
 
 .projects{
+
+align-content: center;
+  display: flex;
+  flex-direction: row;
+
+
 
 }
 
@@ -128,6 +238,14 @@ p{
 }
 
 .project-tile {
+  margin: auto;
+  align-items: center;
+  max-width: 25vw;
+  background-color: red;
+  /*padding: 10vw;*/
+text-align: center;
+display: flex;
+flex-direction: column;
 
 
 }
@@ -136,6 +254,7 @@ p{
 
 }
 .projects img{
+max-width: 20vw;
 
 }
 
@@ -149,43 +268,32 @@ p{
 /*CONTACT INFO*/
 
 .contact-info{
+margin-top: 10vh;
+  display: flex;
+
+  width: 100vw;
+  height: 10vh;
+
+  background-color: var(--dark-blue);
+  text-align: center;
+  box-shadow: 0rem -.3rem 1rem var(--dark-blue);
+
 
 }
 
 .contact-info-block {
 
+margin: auto;
 
-}
-
-.contact-info-block:hover {
-
-
-}
-.tilt-left{
-
-}
-
-.no-tilt{
-
-}
-
-.tilt-right{
-
-}
-
-.tilt-left:hover{
-
-
-}
-
-.no-tilt:hover{
-}
-
-.tilt-right:hover{
 }
 
 
 .contact-info a{
+
+font-family: 'Muli', sans-serif;
+font-size: 3rem;
+color: var(--dark-gray);
+text-decoration: none;
 }
 
 
